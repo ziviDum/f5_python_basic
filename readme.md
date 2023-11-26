@@ -1,5 +1,15 @@
 # Ejercicios Básicos de Python3
 
+Este repositorio contiene ejercicios básicos de Python3 para practicar y aprender el lenguaje.
+
+## Requisitos
+
+Para ejecutar el proyecto, necesitas tener instalado:
+
+- [Python3](https://www.python.org/downloads/)
+- [pip](https://pip.pypa.io/en/stable/installing/)
+- [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html)
+
 
 ## Instalación
 
