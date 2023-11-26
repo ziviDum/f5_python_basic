@@ -17,10 +17,10 @@ Para configurar el entorno de desarrollo y ejecutar el proyecto, sigue los sigui
 
 ```bash
 # Clonar el repositorio
-git clone [URL del repositorio]
+git clone https://github.com/Sergi-Virgili/f5_python_basic.git
 
 # Navegar al directorio del proyecto
-cd [Nombre del Proyecto]
+cd f5_python_basic
 
 # Crear un entorno virtual
 python3 -m venv env
@@ -39,7 +39,7 @@ Para ejecutar los test, sigue los siguientes pasos:
 
 ```bash
 # Navegar al directorio del proyecto
-cd [Nombre del Proyecto]
+cd f5_python_basic
 
 # Ejecutar los test
 pytest
