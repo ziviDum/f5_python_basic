@@ -10,4 +10,5 @@ build/
 docs/_build/
 .env
 env/
-venv/ 
+venv/
+.idea/
