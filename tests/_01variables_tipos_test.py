@@ -1,5 +1,5 @@
 
-from src._01variables_tipos_test import obtener_entero, obtener_flotante, obtener_cadena, obtener_booleano
+from src._01variables_tipos import obtener_entero, obtener_flotante, obtener_cadena, obtener_booleano
 
 
 def test_obtener_entero():
