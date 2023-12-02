@@ -1,7 +1,7 @@
 
 # test_bucles_while.py
 
-from src.bucles_while import encontrar_primer_negativo, cuenta_regresiva, sumar_hasta_limite
+from _07bucles_while import encontrar_primer_negativo, cuenta_regresiva, sumar_hasta_limite
 
 def test_encontrar_primer_negativo():
     assert encontrar_primer_negativo([3, 5, -1, 7]) == -1
