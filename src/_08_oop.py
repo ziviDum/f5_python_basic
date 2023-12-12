@@ -6,7 +6,9 @@ import math
 # Además, debe tener un método `mostrar_informacion` que imprima "Título: [titulo], Autor: [autor]".
 
 class Libro:
-    pass
+    def __init__(self, titulo, autor):
+        self.titulo = titulo
+        self.autor = autor
 
 # Ejercicio 2: Herencia
 # Crea una clase `Vehiculo` con atributos `marca` y `modelo`.
@@ -14,7 +16,15 @@ class Libro:
 
 
 # --------------------------------------------------
-# YOU CODE HERE
+class Vehiculo:
+    def __init__(self, marca, modelo):
+        self.marca = marca
+        self.modelo = modelo
+
+class Coche(Vehiculo):
+    def __init__(self, marca, modelo, cilindrada):
+        super().__init__(marca, modelo)
+        self.cilindrada = cilindrada
 # ---------------------------------------------------
 
 
@@ -25,7 +35,25 @@ class Libro:
 
 
 # --------------------------------------------------
-# YOU CODE HERE
+class CuentaBancaria:
+    def __init__(self, titular, saldo):
+        self._saldo = saldo
+        self._titular = titular
+
+    def retirar(self, cantidad):
+        if cantidad >= self._saldo and catidad > 0:
+            self._saldo -= cantidad
+            return True
+        return False
+
+    def depositar(self, cantidad):
+        if cantidad > 0:
+            self._saldo += cantidad
+            return True
+        return False
+
+    def ver_saldo(self):
+        return self._saldo
 # ---------------------------------------------------
 
 
@@ -35,5 +63,24 @@ class Libro:
 
 
 # --------------------------------------------------
-# YOU CODE HERE
+class Forma:
+    def area(self):
+        pass
+        
+class Circulo(Forma):
+    def __init__(self, radio):
+        self.radio = radio
+
+    def area(self):
+        return self.radio * self.radio * math.pi
+    
+class Cuadrado(Forma):
+    def __init__(self, lado):
+        self.lado = lado
+   
+    def area(self):
+        return self.lado * self.lado
+  
+cuadrado = Cuadrado(5)
+print((cuadrado.area()))    
 # ---------------------------------------------------
